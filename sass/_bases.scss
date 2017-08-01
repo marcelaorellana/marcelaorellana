@@ -1,0 +1,383 @@
+*{
+	font-family: $body_font;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+nav{
+	z-index: 2222;
+	background-color: transparent;
+	box-shadow: none;
+}
+h5{
+	font-family: $body_serif;
+}
+.navbar-fixed{
+	position: absolute;
+}
+.waves-effect.waves-light.btn{
+	background-color: $color_rosado;
+}
+@keyframes example {
+    from {color: white;}
+    to {color: yellow;}
+}
+
+.portada{
+	z-index: -111;
+	background-image: url(../img/bici3.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+a{
+	text-decoration: none;
+}
+.contenedor{
+	margin: -50px 30px 15px 30px;
+	z-index: 1111111;
+	background-color: white;
+	border-radius: $radio;
+	.parrafo{
+		@include parraf();
+	}
+	.trio{
+		text-align: center;
+		i{
+			font-size: 60px;
+		}
+		i.module{
+			color: $color_rosado;
+		}
+		i.list{
+			color: #00BCD4;
+		}
+		i.headlike{
+			color: #4CAF50;
+		}
+		p{
+			color: $color_grisclaro;
+		}
+		h6{
+			font-family: $body_serif;
+			font-weight: bold;
+		}
+	}
+	.who{
+		background-image: url("../img/img_city.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		color: white;
+		padding: 30px;
+		h1{
+			font-family: $body_serif;
+		}
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+	.video{
+		text-align: center;
+	}
+	iframe{
+		border: 1px solid white;
+		margin-top: 20px;
+	}
+	.productos{
+		background-color: #F0F0F0;
+		padding: 30px 10px;
+		text-align: center;
+		p{
+			@include parraf();
+		}
+		h1{
+			font-family: $body_serif;
+		}
+		h6{
+			color: $color_rosado;
+		}
+		h5{
+			font-size: 22px;
+		}
+	}
+	.fashion{
+		@include fashion();
+		.precio{
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+	.portafolio{
+		text-align: center;
+		p{
+			@include parraf();
+		}
+		h1{
+			font-family: $body_serif;
+		}
+
+		.row1{
+			padding: 10px;
+			border-radius: $radio;
+			position: relative;
+			box-sizing: border-box;
+			img{
+				width: 100%;
+				height: auto;
+				border-radius: $radio;
+			}
+			.hoverr{
+				position: absolute;
+				/*top: 12px;
+				left: 12px;
+				width: 95%;
+				height: 92%;*/
+				top:5px;
+				left: 5px;
+				width: 97%;
+				margin: auto;
+				height: 95%;
+				box-sizing: border-box;
+				padding: 30px;
+				opacity: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: white;
+				display: flex;
+				flex-direction: column;
+				.chip{
+					color: white;
+					background-color: #448aff;
+				}
+			}
+			.hoverr:hover{
+				opacity: 1;
+				background-color: rgba(0, 0, 0, .5);
+				border-radius: $radio;
+			}
+		}
+	}
+	.team{
+		.titulo{
+			h1{
+				font-family: $body_serif;
+				text-align: center;
+			}
+			p{
+				@include parraf();
+			}
+		}
+		
+		img{
+			width: 70%;
+			border-radius: 5px;
+		}
+		.perfil{
+			text-align: center;
+		}
+		i{
+			padding: 5px 10px;
+			font-size: 20px;
+		}
+		
+	}
+	.plans{
+		background-color: #F0F0F0;
+		.titulo{
+			padding: 20px 50px;
+			h2{
+				font-family: $body_serif;
+				font-weight: bold;
+			}
+			p{
+				color: $color_grisclaro;
+				padding: 20px;
+				font-size: 16px;
+			}
+		}
+		.tarjeta{
+			background-color: white;
+			text-align: center;
+			padding: 10px;
+			color: gray;
+			margin: 10px 0;
+		}
+		.tarjeta2{
+			text-align: center;
+			padding: 10px 30px;
+			color: gray;
+			margin: 10px 0;
+		}
+		.dolar{
+			font-size: 50px;
+		}
+		sup { 
+			vertical-align: top; 
+			font-size: 30px; 
+		}
+		sub { 
+			font-size: 30px; 
+			padding-bottom: 5px;
+		}
+	}
+	.clients{
+		text-align: center;
+		padding: 10px 30px;
+		.titulo{
+			h1{
+				font-family: $body_serif;
+			}
+			p{
+				@include parraf();
+			}
+		}
+		img{
+			width: 40%;
+		}
+	}
+	.subscribe{
+		h4{
+			font-family: $body_serif;
+			color: white;
+			font-weight: bold;
+		}
+		p{
+			color: white;
+			font-size: 20px;
+		}
+		background-image: url("../img/about.jpg");
+		background-size: cover;
+		background-position: top;
+		text-align: center;
+		height: 50vh;
+		.sub{
+			background-color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 20px 30px;
+			border-radius: $radio;
+		}
+	}
+	.blog{
+		.titulo{
+			h1{
+				font-family: $body_serif;
+				text-align: center;
+			}
+			p{
+				@include parraf();
+			}
+		}
+		.apariencia{
+			padding: 25px;
+			h6{
+				color: #448aff;
+			}
+			img{
+				border-radius: $radio;
+			}
+		}
+	}
+	.getInTouch{
+		background-image: url("../img/img_city.jpg");
+		background-size: cover;
+		color: white;
+		h2{
+			font-family: $body_serif;
+			font-weight: bold;
+		}
+		.titulo{
+			padding: 10px 40px 10px 20px;
+		}
+		.contact{
+			background-color: white;
+			color: gray;
+			border-radius: $radio;
+			padding: 20px;
+			margin: 30px 20px;
+			h5{
+				width: 80%;
+				margin: auto;
+				background-color: $color_rosado;
+				border-radius: $radio;
+				color: white;
+				text-align: center;
+				padding: 20px;
+				margin-top: -30px;
+				font-weight: bold;
+			}
+			.name{
+				display: flex;
+				flex-direction: row;
+				width: 95%;
+				input{
+					margin: 20px 10px;
+				}
+			}
+			.subj{
+				width: 90%;
+				margin: 20px 20px;
+			}
+			textarea{
+				height: 130px;
+			}
+		}
+	}
+	footer{
+		background-color: #323437;
+		color: white;
+		margin-top: -20px;
+		h5{
+			font-weight: bold;
+		}
+		.text{
+			padding: 30px;
+		}
+		.twit{
+			display: flex;
+			flex-direction: row;
+			p{
+				color: white;
+			}
+			p.parraf{
+				color: lightgray;
+				padding: 0 10px;
+				font-size: 12px;
+			}
+		}
+		img{
+			border-radius: $radio;
+		}
+		.footer-row{
+			border-bottom: 1px solid lightgray;
+		}
+		.fin{
+			padding: 30px 20px;
+			display: flex;
+			justify-content: space-between;
+			a{
+				color: white;
+			}
+			p{
+				margin: 0;
+				color: white;
+
+			}
+		}
+	}
+}
