@@ -6,6 +6,14 @@ $(document).ready(function(){
     height: 600,
     indicators: false
     });
+  
+  $('.aboutme-p').css('opacity', 0);
+  $(".aboutme-p").waypoint(function() {
+    $('.aboutme-p').addClass('fadeInRight');
+  }, { offset: '50%'});
+
+
+
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {

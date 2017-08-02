@@ -17,11 +17,15 @@ nav{
 h5{
 	font-family: $body_serif;
 }
+.logo{
+	width: 50px;
+	height:50px;
+}
 .navbar-fixed{
 	position: absolute;
 }
 .waves-effect.waves-light.btn{
-	background-color: $color_rosado;
+	background-color: $rosado;
 }
 @keyframes example {
     from {color: white;}
@@ -39,7 +43,9 @@ h5{
 	justify-content: center;
 	
 }
-
+.typewrite{
+	color: white;
+}
 a{
 	text-decoration: none;
 }
@@ -48,16 +54,37 @@ a{
 	z-index: 1111111;
 	background-color: white;
 	border-radius: $radio;
-	.parrafo{
-		@include parraf();
+	.flecha{
+		width: 100%;
+		margin: 20px auto;
+		div{
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			margin: auto;
+			i{
+				color: $celeste;
+				font-size: 70px
+			}
+		}
 	}
-	.trio{
+
+
+	.aboutme{
+		.marcela-img{
+			border: 8px solid white;
+			-ms-transform: rotate(-7deg); /* IE 9 */
+    		-webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    		transform: rotate(-7deg);
+    		box-shadow: 5px 5px 2px #888888;
+    		margin: 10px;
+		}
 		text-align: center;
 		i{
 			font-size: 60px;
 		}
 		i.module{
-			color: $color_rosado;
+			color: $rosado;
 		}
 		i.list{
 			color: #00BCD4;
@@ -101,13 +128,13 @@ a{
 		padding: 30px 10px;
 		text-align: center;
 		p{
-			@include parraf();
+			
 		}
 		h1{
 			font-family: $body_serif;
 		}
 		h6{
-			color: $color_rosado;
+			color: $rosado;
 		}
 		h5{
 			font-size: 22px;
@@ -123,7 +150,7 @@ a{
 	.portafolio{
 		text-align: center;
 		p{
-			@include parraf();
+			
 		}
 		h1{
 			font-family: $body_serif;
@@ -178,7 +205,7 @@ a{
 				text-align: center;
 			}
 			p{
-				@include parraf();
+				
 			}
 		}
 		
@@ -196,6 +223,10 @@ a{
 		
 	}
 	.plans{
+		
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+
 		background-color: #F0F0F0;
 		.titulo{
 			padding: 20px 50px;
@@ -242,7 +273,7 @@ a{
 				font-family: $body_serif;
 			}
 			p{
-				@include parraf();
+				
 			}
 		}
 		img{
@@ -280,7 +311,7 @@ a{
 				text-align: center;
 			}
 			p{
-				@include parraf();
+				
 			}
 		}
 		.apariencia{
@@ -313,7 +344,7 @@ a{
 			h5{
 				width: 80%;
 				margin: auto;
-				background-color: $color_rosado;
+				background-color: $rosado;
 				border-radius: $radio;
 				color: white;
 				text-align: center;
