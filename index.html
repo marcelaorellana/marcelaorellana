@@ -5,6 +5,7 @@
 	<title>portafolio sass</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+	  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,26 +15,35 @@
 </head>
 <body>
 	
-<div class="navbar-fixed">
-	<nav>
-	  <div class="nav-wrapper">
-	    <a href="#!" class="brand-logo"><img src="img/logoMO.png" alt="" class="logo"></a>
-	    <ul class="right hide-on-med-and-down">
-	      <li><a href="sass.html"><i class="material-icons left">shopping_basket</i>About Me</a></li>
-	      <li><a href="sass.html"><i class="material-icons left">shopping_basket</i>Skills</a></li>
-	      <li><a href="badges.html"><i class="material-icons left">assignment</i>Portfolio</a></li>
-	      <li><a href="badges.html"><i class="material-icons left">email</i>Contact Me</a></li>
-	    </ul>
-	  </div>
-	</nav>
-</div>
+<header>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper"> <a href="#!" class="brand-logo"><img src="img/logoMO.png" alt="" id="logoMarce"></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">Javascript</a></li>
+                    <li><a href="mobile.html">Mobile</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+    </ul>
+</header>
 <div class="portada">
-	
-<h1>
-  <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Marcela.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
-    <span class="wrap"></span>
-  </a>
-</h1>
+	<h1>Marcela Orellana</h1>
+	<h3>Front End Developer Junior</h3>
+	<h1>
+	  <a href="" class="typewrite" data-period="2000" data-type='[ "Hi,", "I Love to Develop." ]'>
+	    <span class="wrap"></span>
+	  </a>
+	</h1>
 	
 </div>
 <div class="contenedor z-depth-5">
@@ -42,12 +52,16 @@
 	    <div class="col s12">
 	    	<div class="flecha animated bounceIn">
 	    		<div class="arrow"><i class="material-icons left">arrow_downward</i></div>
-	    	
 	    	</div>
 	    </div>
 		</div>
 	</div>
-	<div class="container aboutme">
+	<div class="aboutme">
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<h1>About Me</h1>
+			</div>
+		</div>
 		<div class="row">
 			<div class="col s12 m5 l5">
 				<img src="img/yo.jpg" alt="" class="marcela-img  animated">
@@ -58,74 +72,59 @@
 			
 		</div>
 	</div>
-	<div class="who">
-			<div class="row">
-				<div class="col s12 m6 l6">
-					<h1>Who are we now</h1>
-					<p>Ideate integrate food-truck agile ideate thinker-maker-doer user story intuitive hacker integrate workflow Steve Jobs. Steve Jobs pair programming food-truck big data long shadow SpaceTeam agile agile affordances. User centered design food-truck experiential minimum viable product human-centered design prototype viral quantitative vs. qualitative.</p>
-				</div>
-				<div class="col s12 m6 l6">
-					<img src="img/img_tablet.png" alt="tablet">
-				</div>
-			</div>
-			<div class="row video">
-				<div class="col s12 m12 l12">
-					<iframe width="680" height="381" src="https://www.youtube.com/embed/pYOJNOJfJxU" frameborder="0" allowfullscreen></iframe>
-				</div>
-			</div>
-	</div>
-	<div class="productos">
+	<div class="skills">
 		<div class="row titulo">
-			<h1>Products</h1>
-			<p class="parraf">Showcase your products in this beautiful shop section.</p>
+			<div class="col s12 m12 l12">
+				<h1>Skills</h1>
+				<p class="parraf">Showcase your products in this beautiful shop section.</p>
+			</div>
 		</div>
 		<div class="row">
-			<div class="col s12 m3 l3">
-				<div class="fashion">
-					<img src="img/img_product_1.png" alt="dress" class="z-depth-3">
-					<h6>FASHION</h6>
-					<h5>Embroidered Dress</h5>
-					<p>Sentiments two occasional affronting solicitude travelling and one contrasted. Fortune day out married parties.</p>
-					<div class="precio">
-						<span>£100.00</span>
-						<i class="material-icons headlike">shopping_cart</i>
-					</div>
+			<div class="col s12 m4 l4">
+				<div class="skills-big javascript">
+					<i class="devicon-javascript-plain"></i>
 				</div>
 			</div>
-			<div class="col s12 m3 l3">
-				<div class="fashion">
-					<img src="img/img_product_2.png" alt="dress" class="z-depth-3">
-					<h6>POPULAR</h6>
-					<h5>Printed Blue T-Shirt</h5>
-					<p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold.</p>
-					<div class="precio">
-						<span>£35.00</span>
-						<i class="material-icons headlike">shopping_cart</i>
-					</div>
+			<div class="col s12 m4 l4">
+				<div class="skills-big html5">
+					<i class="devicon-html5-plain-wordmark"></i>
 				</div>
 			</div>
-			<div class="col s12 m3 l3">
-				<div class="fashion">
-					<img src="img/img_product_3.png" alt="dress" class="z-depth-3">
-					<h6>TRENDING</h6>
-					<h5>Embroidered Blouse</h5>
-					<p>Sentiments two occasional affronting solicitude travelling and one contrasted. Fortune day out married parties.</p>
-					<div class="precio">
-						<span>£45.00</span>
-						<i class="material-icons headlike">shopping_cart</i>
-					</div>
+			<div class="col s12 m4 l4">
+				<div class="skills-big css3">
+					<i class="devicon-css3-plain-wordmark"></i>
 				</div>
 			</div>
-			<div class="col s12 m3 l3">
-				<div class="fashion">
-					<img src="img/img_product_4.jpg" alt="dress" class="z-depth-3">
-					<h6>FASHION</h6>
-					<h5>Trucker Jacket</h5>
-					<p>So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid up on.</p>
-					<div class="precio">
-						<span>£110.00</span>
-						<i class="material-icons headlike">shopping_cart</i>
-					</div>
+		</div>
+		<div class="row">
+			<div class="col s6 m2 l2">
+				<div class="skills-small jquery">
+					<i class="devicon-jquery-plain-wordmark"></i>
+				</div>
+			</div>
+			<div class="col s6 m2 l2">
+				<div class="skills-small sass">
+					<i class="devicon-sass-original"></i>
+				</div>
+			</div>
+			<div class="col s6 m2 l2">
+				<div class="skills-small git">
+					<i class="devicon-git-plain-wordmark"></i>
+				</div>
+			</div>
+			<div class="col s6 m2 l2">
+				<div class="skills-small github">
+					<i class="devicon-github-plain-wordmark"></i>
+				</div>
+			</div>
+			<div class="col s6 m2 l2">
+				<div class="skills-small bootstrap">
+					<i class="devicon-bootstrap-plain-wordmark"></i>
+				</div>
+			</div>
+			<div class="col s6 m2 l2">
+				<div class="skills-small gulp">
+					<i class="devicon-gulp-plain"></i>
 				</div>
 			</div>
 		</div>

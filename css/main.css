@@ -6783,29 +6783,20 @@ img {
   width: 100%;
   height: auto; }
 
+a {
+  text-decoration: none; }
+
 nav {
-  z-index: 2222;
+  z-index: 222;
   background-color: transparent;
   box-shadow: none; }
-
-h5 {
-  font-family: "PT Serif", serif; }
-
-.logo {
-  width: 50px;
-  height: 50px; }
+  nav img {
+    width: 50px;
+    height: 50px; }
 
 .navbar-fixed {
   position: absolute; }
 
-.waves-effect.waves-light.btn, .waves-effect.waves-light.btn-large {
-  background-color: #EA877E; }
-
-@keyframes example {
-  from {
-    color: white; }
-  to {
-    color: yellow; } }
 .portada {
   z-index: -111;
   background-image: url(../img/bici3.jpg);
@@ -6813,20 +6804,28 @@ h5 {
   background-attachment: fixed;
   height: 90vh;
   display: flex;
-  align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column; }
+  .portada h1, .portada h3 {
+    text-align: center;
+    display: block;
+    margin: 5px;
+    padding: 0;
+    align-self: center;
+    color: white; }
 
 .typewrite {
-  color: white; }
-
-a {
-  text-decoration: none; }
+  color: #314656; }
 
 .contenedor {
   margin: -50px 30px 15px 30px;
   z-index: 1111111;
   background-color: white;
   border-radius: 10px; }
+  .contenedor h1 {
+    font-weight: 700;
+    color: white; }
   .contenedor .flecha {
     width: 100%;
     margin: 20px auto; }
@@ -6839,6 +6838,11 @@ a {
         color: #49979A;
         font-size: 70px; }
   .contenedor .aboutme {
+    background-color: #EA877E;
+    padding: 20px 150px;
+    -webkit-clip-path: polygon(0 0, 100% 8%, 100% 92%, 0% 100%);
+    clip-path: polygon(0 0, 100% 8%, 100% 92%, 0% 100%);
+    color: white;
     text-align: center; }
     .contenedor .aboutme .marcela-img {
       border: 8px solid white;
@@ -6849,6 +6853,9 @@ a {
       transform: rotate(-7deg);
       box-shadow: 5px 5px 2px #888888;
       margin: 10px; }
+      @media screen and (max-width: 600px) {
+        .contenedor .aboutme .marcela-img {
+          width: 70%; } }
     .contenedor .aboutme i {
       font-size: 60px; }
     .contenedor .aboutme i.module {
@@ -6858,51 +6865,58 @@ a {
     .contenedor .aboutme i.headlike {
       color: #4CAF50; }
     .contenedor .aboutme p {
-      color: #969696; }
+      color: white; }
     .contenedor .aboutme h6 {
       font-family: "PT Serif", serif;
       font-weight: bold; }
-  .contenedor .who {
-    background-image: url("../img/img_city.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white;
-    padding: 30px; }
-    .contenedor .who h1 {
-      font-family: "PT Serif", serif; }
-    .contenedor .who img {
-      width: 100%;
-      height: auto; }
-  .contenedor .video {
-    text-align: center; }
-  .contenedor iframe {
-    border: 1px solid white;
-    margin-top: 20px; }
-  .contenedor .productos {
+    @media screen and (max-width: 600px) {
+      .contenedor .aboutme {
+        padding: 20px;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); } }
+  .contenedor .skills {
+    z-index: -22;
     background-color: #F0F0F0;
-    padding: 30px 10px;
+    margin-top: -80px;
+    padding: 60px 30px;
     text-align: center; }
-    .contenedor .productos h1 {
-      font-family: "PT Serif", serif; }
-    .contenedor .productos h6 {
-      color: #EA877E; }
-    .contenedor .productos h5 {
-      font-size: 22px; }
-  .contenedor .fashion {
-    background-color: white;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5px; }
-    .contenedor .fashion img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      margin-top: -30px; }
-    .contenedor .fashion .precio {
+    .contenedor .skills h1 {
+      color: #314656; }
+    .contenedor .skills .skills-big {
+      border: 10px solid #49979A;
+      border-radius: 50%;
+      width: 240px;
+      height: 240px;
+      margin: auto;
       display: flex;
-      justify-content: space-between; }
+      justify-content: center;
+      align-items: center; }
+      .contenedor .skills .skills-big i {
+        font-size: 130px; }
+    .contenedor .skills .javascript {
+      border-color: #314656; }
+      .contenedor .skills .javascript i {
+        color: #314656; }
+    .contenedor .skills .html5 {
+      border-color: #49979A; }
+      .contenedor .skills .html5 i {
+        color: #49979A; }
+    .contenedor .skills .css3 {
+      border-color: #EA877E; }
+      .contenedor .skills .css3 i {
+        color: #EA877E; }
+    .contenedor .skills .skills-small {
+      border: 6px solid #ACC1C2;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .contenedor .skills .skills-small i {
+        font-size: 70px;
+        color: #ACC1C2; }
   .contenedor .portafolio {
     text-align: center; }
     .contenedor .portafolio h1 {
@@ -7088,5 +7102,11 @@ a {
       .contenedor footer .fin p {
         margin: 0;
         color: white; }
+
+@media screen and (max-width: 600px) {
+  .aboutme {
+    padding: 0;
+    -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0); } }
 
 /*# sourceMappingURL=main.css.map */
