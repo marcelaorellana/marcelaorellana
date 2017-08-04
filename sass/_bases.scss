@@ -12,6 +12,9 @@ img{
 a{
 	text-decoration: none;
 }
+p{
+	font-size: 18px;
+}
 
 nav{
 	z-index: 222;
@@ -20,6 +23,10 @@ nav{
 	img{
 		width: 50px;
 		height: 50px;
+	}
+	ul li a{
+		font-size: 20px;
+		font-weight: 700;
 	}
 }
 .navbar-fixed{
@@ -52,6 +59,7 @@ nav{
 	h1{
 		font-weight: 700;
 		color: white;
+		text-align: center;
 	}
 	margin: -50px 30px 15px 30px;
 	z-index: 1111111;
@@ -73,7 +81,7 @@ nav{
 	}
 	.aboutme{
 		background-color: $rosado;
-		padding: 20px 150px;
+		padding: 30px 150px 90px;
 		-webkit-clip-path: polygon(0 0, 100% 8%, 100% 92%, 0% 100%);
 		clip-path: polygon(0 0, 100% 8%, 100% 92%, 0% 100%);
 		color: white;
@@ -124,6 +132,9 @@ nav{
 		h1{
 			color: $azul;
 		}
+		.skills-small-row{
+			margin-bottom: 50px;
+		}
 		.skills-big{
 			border: 10px solid $celeste;
 			border-radius: 50%;
@@ -165,6 +176,7 @@ nav{
 			display: flex;
 			justify-content: center;
 			align-items: center;
+
 			i{
 				font-size: 70px;
 				color: #ACC1C2;
@@ -174,268 +186,70 @@ nav{
 	}
 	
 	.portafolio{
+		-webkit-clip-path: polygon(35% 0, 100% 5%, 100% 93%, 65% 100%, 0 95%, 0 7%);
+		clip-path: polygon(35% 0, 100% 5%, 100% 93%, 65% 100%, 0 95%, 0 7%);
+		z-index: 333;
+		margin-top: -70px;
+		padding-top: 30px;
+		padding-bottom: 80px;
+		background-color: $azul;
 		text-align: center;
-		p{
-			
+		.pokedex{
+			background-image: url(../img/pokedex.png);
 		}
-		h1{
-			font-family: $body_serif;
+		.portf{
+			width: 100%;
+			height: 35vh;
+			border-radius: 10px;
+			background-size: cover;
 		}
 
-		.row1{
-			padding: 10px;
-			border-radius: $radio;
-			position: relative;
-			box-sizing: border-box;
-			img{
-				width: 100%;
-				height: auto;
-				border-radius: $radio;
-			}
-			.hoverr{
-				position: absolute;
-				/*top: 12px;
-				left: 12px;
-				width: 95%;
-				height: 92%;*/
-				top:5px;
-				left: 5px;
-				width: 97%;
-				margin: auto;
-				height: 95%;
-				box-sizing: border-box;
-				padding: 30px;
-				opacity: 0;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				color: white;
-				display: flex;
-				flex-direction: column;
-				.chip{
-					color: white;
-					background-color: #448aff;
-				}
-			}
-			.hoverr:hover{
-				opacity: 1;
-				background-color: rgba(0, 0, 0, .5);
-				border-radius: $radio;
-			}
-		}
-	}
-	.team{
-		.titulo{
-			h1{
-				font-family: $body_serif;
-				text-align: center;
-			}
-			p{
-				
-			}
-		}
-		
-		img{
-			width: 70%;
-			border-radius: 5px;
-		}
-		.perfil{
-			text-align: center;
-		}
-		i{
-			padding: 5px 10px;
-			font-size: 20px;
-		}
-		
-	}
-	.plans{
-		
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-
-		background-color: #F0F0F0;
-		.titulo{
-			padding: 20px 50px;
-			h2{
-				font-family: $body_serif;
-				font-weight: bold;
-			}
-			p{
-				color: $color_grisclaro;
-				padding: 20px;
-				font-size: 16px;
-			}
-		}
-		.tarjeta{
-			background-color: white;
-			text-align: center;
-			padding: 10px;
-			color: gray;
-			margin: 10px 0;
-		}
-		.tarjeta2{
-			text-align: center;
-			padding: 10px 30px;
-			color: gray;
-			margin: 10px 0;
-		}
-		.dolar{
-			font-size: 50px;
-		}
-		sup { 
-			vertical-align: top; 
-			font-size: 30px; 
-		}
-		sub { 
-			font-size: 30px; 
-			padding-bottom: 5px;
-		}
-	}
-	.clients{
-		text-align: center;
-		padding: 10px 30px;
-		.titulo{
-			h1{
-				font-family: $body_serif;
-			}
-			p{
-				
-			}
-		}
-		img{
-			width: 40%;
-		}
-	}
-	.subscribe{
-		h4{
-			font-family: $body_serif;
-			color: white;
-			font-weight: bold;
-		}
-		p{
-			color: white;
-			font-size: 20px;
-		}
-		background-image: url("../img/about.jpg");
-		background-size: cover;
-		background-position: top;
-		text-align: center;
-		height: 50vh;
-		.sub{
-			background-color: white;
+		.hove{
+			border-radius: 10px;
+			width: 100%;
+			height: 100%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			padding: 20px 30px;
-			border-radius: $radio;
+			flex-direction: column;
+			opacity: 0;
+			-webkit-transition: background-color 1s ease-out;
+  			-moz-transition: background-color 1s ease-out;
+  			-o-transition: background-color 1s ease-out;
+  			transition: background-color 1s ease-out;
+		}
+		.hove:hover{
+			opacity: 1;
+			background-color: rgba(225, 225, 225, 0.6);
+		}
+		.btn{
+			background-color: $rosado;
 		}
 	}
-	.blog{
-		.titulo{
-			h1{
-				font-family: $body_serif;
-				text-align: center;
-			}
-			p{
-				
-			}
-		}
-		.apariencia{
-			padding: 25px;
-			h6{
-				color: #448aff;
-			}
-			img{
-				border-radius: $radio;
+	.contact{
+		background-color: $celeste;
+		padding-top: 60px;
+		margin-top: -60px;
+		height: 50vh;
+		p{
+			font-size: 20px;
+			color: white;
+			i{
+				font-size: 25px;
 			}
 		}
+		a:hover p{
+			color: $rosado;
+
+		}
+		
 	}
-	.getInTouch{
-		background-image: url("../img/img_city.jpg");
-		background-size: cover;
-		color: white;
-		h2{
-			font-family: $body_serif;
-			font-weight: bold;
-		}
-		.titulo{
-			padding: 10px 40px 10px 20px;
-		}
-		.contact{
-			background-color: white;
-			color: gray;
-			border-radius: $radio;
-			padding: 20px;
-			margin: 30px 20px;
-			h5{
-				width: 80%;
-				margin: auto;
-				background-color: $rosado;
-				border-radius: $radio;
-				color: white;
-				text-align: center;
-				padding: 20px;
-				margin-top: -30px;
-				font-weight: bold;
-			}
-			.name{
-				display: flex;
-				flex-direction: row;
-				width: 95%;
-				input{
-					margin: 20px 10px;
-				}
-			}
-			.subj{
-				width: 90%;
-				margin: 20px 20px;
-			}
-			textarea{
-				height: 130px;
-			}
-		}
-	}
+	
 	footer{
 		background-color: #323437;
 		color: white;
 		margin-top: -20px;
-		h5{
-			font-weight: bold;
-		}
-		.text{
-			padding: 30px;
-		}
-		.twit{
-			display: flex;
-			flex-direction: row;
-			p{
-				color: white;
-			}
-			p.parraf{
-				color: lightgray;
-				padding: 0 10px;
-				font-size: 12px;
-			}
-		}
-		img{
-			border-radius: $radio;
-		}
-		.footer-row{
-			border-bottom: 1px solid lightgray;
-		}
-		.fin{
-			padding: 30px 20px;
-			display: flex;
-			justify-content: space-between;
-			a{
-				color: white;
-			}
-			p{
-				margin: 0;
-				color: white;
-
-			}
-		}
+		text-align: center;
 	}
 }
 @media screen and (max-width: 600px){

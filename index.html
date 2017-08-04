@@ -18,22 +18,22 @@
 <header>
     <div class="navbar-fixed">
         <nav>
-            <div class="nav-wrapper"> <a href="#!" class="brand-logo"><img src="img/logoMO.png" alt="" id="logoMarce"></a>
+            <div class="nav-wrapper"> <a href="#!" class="brand-logo"><img src="img/logoMO.png" alt="logo" id="logoMarce"></a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">Javascript</a></li>
-                    <li><a href="mobile.html">Mobile</a></li>
+                    <li><a href="#aboutmeID">About Me</a></li>
+                    <li><a href="#skillsID">Skills</a></li>
+                    <li><a href="#portfolioID">Portfolio</a></li>
+                    <li><a href="#contactID">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
     </div>
     <ul class="side-nav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        <li><a href="#aboutmeID">Sass</a></li>
+        <li><a href="#skillsID">Components</a></li>
+        <li><a href="#portfolioID">Javascript</a></li>
+        <li><a href="m#contactID">Mobile</a></li>
     </ul>
 </header>
 <div class="portada">
@@ -56,7 +56,7 @@
 	    </div>
 		</div>
 	</div>
-	<div class="aboutme">
+	<div class="aboutme" id="aboutmeID">
 		<div class="row">
 			<div class="col s12 m12 l12">
 				<h1>About Me</h1>
@@ -72,431 +72,177 @@
 			
 		</div>
 	</div>
-	<div class="skills">
+	<div class="skills" id="skillsID">
 		<div class="row titulo">
 			<div class="col s12 m12 l12">
 				<h1>Skills</h1>
-				<p class="parraf">Showcase your products in this beautiful shop section.</p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col s12 m4 l4">
-				<div class="skills-big javascript">
+				<div class="skills-big javascript animated hoverable">
 					<i class="devicon-javascript-plain"></i>
 				</div>
 			</div>
 			<div class="col s12 m4 l4">
-				<div class="skills-big html5">
+				<div class="skills-big html5 animated hoverable">
 					<i class="devicon-html5-plain-wordmark"></i>
 				</div>
 			</div>
 			<div class="col s12 m4 l4">
-				<div class="skills-big css3">
+				<div class="skills-big css3 animated hoverable">
 					<i class="devicon-css3-plain-wordmark"></i>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col s6 m2 l2">
-				<div class="skills-small jquery">
+		<div class="row skills-small-row">
+			<div class="col s6 m12 l2">
+				<div class="skills-small jquery animated hoverable">
 					<i class="devicon-jquery-plain-wordmark"></i>
 				</div>
 			</div>
-			<div class="col s6 m2 l2">
-				<div class="skills-small sass">
+			<div class="col s6 m12 l2">
+				<div class="skills-small sass animated hoverable">
 					<i class="devicon-sass-original"></i>
 				</div>
 			</div>
-			<div class="col s6 m2 l2">
-				<div class="skills-small git">
+			<div class="col s6 m12 l2">
+				<div class="skills-small git animated hoverable">
 					<i class="devicon-git-plain-wordmark"></i>
 				</div>
 			</div>
-			<div class="col s6 m2 l2">
-				<div class="skills-small github">
+			<div class="col s6 m12 l2">
+				<div class="skills-small github animated hoverable">
 					<i class="devicon-github-plain-wordmark"></i>
 				</div>
 			</div>
-			<div class="col s6 m2 l2">
-				<div class="skills-small bootstrap">
+			<div class="col s6 m12 l2">
+				<div class="skills-small bootstrap animated hoverable">
 					<i class="devicon-bootstrap-plain-wordmark"></i>
 				</div>
 			</div>
-			<div class="col s6 m2 l2">
-				<div class="skills-small gulp">
+			<div class="col s6 m12 l2">
+				<div class="skills-small gulp animated hoverable">
 					<i class="devicon-gulp-plain"></i>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="portafolio">
+	<div class="portafolio" id="portfolioID">
 		<div class="row">
 			<h1>Portfolio</h1>
-			<p class="parraf">Showcase your work effectively and in an attractive form that your prospective clients will love.</p>
 		</div>
 		<div class="row">
-			<div class="col s12 m4 l4">
-				<div class="row1">
-					<img src="img/img_portafolio_1.jpg" alt="escalera" class="z-depth-4">
-					<div class="hoverr">
-						<div class="chip">PRODUCTIVITY</div>
-						<h5>Morbi mauris diam</h5>
+			<div class="col s12 m6 l4">
+				<div class="pokedex portf">
+					<div class="hove">
+						<h3 class="titulo-port animated">POKEDEX</h3>
+						<div class="btn-hover animated">
+							<a class="waves-effect waves-light btn">GitHub</a>
+							<a class="waves-effect waves-light btn">DEMO</a>
+						</div>	
 					</div>
-				</div>
+				</div>	
 			</div>
-			<div class="col s12 m4 l4">
-				<div class="row1">
-					<img src="img/img_portafolio_2.jpg" alt="escalera" class="z-depth-4">
-					<div class="hoverr">
-						<div class="chip">DESIGN</div>
-						<h5>Morbi mauris diam</h5>
+			<div class="col s12 m6 l4">
+				<div class="pokedex portf">
+					<div class="hove">
+						<h3 class="titulo-port animated">POKEDEX</h3>
+						<div class="btn-hover animated">
+							<a class="waves-effect waves-light btn">GitHub</a>
+							<a class="waves-effect waves-light btn">DEMO</a>
+						</div>	
 					</div>
-				</div>
+				</div>	
 			</div>
-			<div class="col s12 m4 l4">
-				<div class="row1">
-					<img src="img/img_portafolio_3.jpg" alt="escalera" class="z-depth-4">
-					<div class="hoverr">
-						<div class="chip">PRODUCTIVITY</div>
-						<h5>Morbi mauris diam</h5>
+			<div class="col s12 m6 l4">
+				<div class="pokedex portf">
+					<div class="hove">
+						<h3 class="titulo-port animated">POKEDEX</h3>
+						<div class="btn-hover animated">
+							<a class="waves-effect waves-light btn">GitHub</a>
+							<a class="waves-effect waves-light btn">DEMO</a>
+						</div>	
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col s12 m6 l6">
-				<div class="row1 row2">
-					<img src="img/img_portafolio_4.jpg" alt="escalera" class="z-depth-4">
-					<div class="hoverr">
-						<div class="chip">PRODUCTIVITY</div>
-						<h5>Morbi mauris diam</h5>
-					</div>
-				</div>
-			</div>
-			<div class="col s12 m6 l6">
-				<div class="row1 row2">
-					<img src="img/img_portafolio_5.jpg" alt="escalera" class="z-depth-4">
-					<div class="hoverr">
-						<div class="chip">PRODUCTIVITY</div>
-						<h5>Morbi mauris diam</h5>
-					</div>
-				</div>
+				</div>	
 			</div>
 		</div>
 		<div class="row">
-			<div class="col s12 m4 l4">
-				<div class="row1">
-					<img src="img/img_portafolio_6.jpg" alt="escalera" class="z-depth-4">
-					<div class="hoverr">
-						<div class="chip">DESIGN</div>
-						<h5>Morbi mauris diam</h5>
+			<div class="col s12 m6 l4">
+				<div class="pokedex portf">
+					<div class="hove">
+						<h3 class="titulo-port animated">POKEDEX</h3>
+						<div class="btn-hover animated">
+							<a class="waves-effect waves-light btn">GitHub</a>
+							<a class="waves-effect waves-light btn">DEMO</a>
+						</div>	
 					</div>
-				</div>
+				</div>	
 			</div>
-			<div class="col s12 m4 l4">
-				<div class="row1">
-					<img src="img/img_portafolio_7.jpg" alt="escalera" class="z-depth-4">
-					<div class="hoverr">
-						<div class="chip">PRODUCTIVITY</div>
-						<h5>Morbi mauris diam</h5>
+			<div class="col s12 m6 l4">
+				<div class="pokedex portf">
+					<div class="hove">
+						<h3 class="titulo-port animated">POKEDEX</h3>
+						<div class="btn-hover animated">
+							<a class="waves-effect waves-light btn">GitHub</a>
+							<a class="waves-effect waves-light btn">DEMO</a>
+						</div>	
 					</div>
-				</div>
+				</div>	
 			</div>
-			<div class="col s12 m4 l4">
-				<div class="row1">
-					<img src="img/img_portafolio_8.jpg" alt="escalera" class="z-depth-4">
-					<div class="hoverr">
-						<div class="chip">DESIGN</div>
-						<h5>Morbi mauris diam</h5>
+			<div class="col s12 m6 l4">
+				<div class="pokedex portf">
+					<div class="hove">
+						<h3 class="titulo-port animated">POKEDEX</h3>
+						<div class="btn-hover animated">
+							<a class="waves-effect waves-light btn">GitHub</a>
+							<a class="waves-effect waves-light btn">DEMO</a>
+						</div>	
 					</div>
-				</div>
+				</div>	
 			</div>
 		</div>
 	</div>
-	<div class="team">
-		<div class="row titulo">
-			<h1>Meet our team</h1>
-			<p class="parraf">Prove that you have real people working for you, with some nice looking profile pictures and links to social media.</p>
+	<div class="contact" id="contactID">
+		<div class="row">
+			
 		</div>
 		<div class="row">
-			<div class="col s12 m6 l6">
-				<div class="row">
-					<div class="col s12 m6 l6 perfil">
-						<img src="img/img_team_1.jpg" alt="Desmond" class="z-depth-4">
-					</div>
-					<div class="col s12 m6 l6 desc">
-						<h5>Desmond Purpleson</h5>
-						<h6>CEO</h6>
-						<p>Locavore pinterest chambray affogato art party, forage coloring book typewriter. Bitters cold selfies, retro celiac sartorial mustache.</p>
-						<div class="social">
-							<i class="fa fa-facebook blue-text text-darken-4" aria-hidden="true"></i>
-							<i class="fa fa-google-plus red-text text-darken-4" aria-hidden="true"></i>
-							<i class="fa fa-twitter blue-text" aria-hidden="true"></i>
-							<i class="fa fa-linkedin blue-text text-darken-3" aria-hidden="true"></i>
-						</div>
-					</div>
-				</div>
+			<div class="col s12 m6">
+				<h1>Contact Me</h1>
 			</div>
-			<div class="col s12 m6 l6">
-				<div class="row">
-					<div class="col s12 m6 l6 perfil">
-						<img src="img/img_team_2.jpg" alt="Desmond" class="z-depth-4">
-					</div>
-					<div class="col s12 m6 l6 desc">
-						<h5>Parsley Pepperspray</h5>
-						<h6>MARKETING SPECIALIST</h6>
-						<p>Craft beer salvia celiac mlkshk. Pinterest celiac tumblr, portland salvia skateboard cliche thundercats. Tattooed chia austin hell.</p>
-						<div class="social">
-							<i class="fa fa-facebook blue-text text-darken-4" aria-hidden="true"></i>
-							<i class="fa fa-google-plus red-text text-darken-4" aria-hidden="true"></i>
-							<i class="fa fa-twitter blue-text" aria-hidden="true"></i>
-							<i class="fa fa-linkedin blue-text text-darken-3" aria-hidden="true"></i>
-						</div>
-					</div>
-				</div>
+			<div class="col s12 m6">
+				<p><i class="fa fa-envelope" aria-hidden="true"></i> marcelapaz.1985@gmail.com</p>
+				<p><i class="fa fa-phone-square" aria-hidden="true"></i> +56 9 98116429</p>
+				<a href="https://www.linkedin.com/in/marcela-orellana-4a9717a4/" target="_blank"><p><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkIn</p></a>
+				<a href="https://github.com/marcelaorellana" target="_blank"><p><i class="fa fa-github" aria-hidden="true"></i> GitHub</p></a>
+				<a href="entrevista.docx" download="entrevista">Download</a>
 			</div>
+
 		</div>
-		<div class="row">
-			<div class="col s12 m6 l6">
-				<div class="row">
-					<div class="col s12 m6 l6 perfil">
-						<img src="img/img_team_3.jpg" alt="Desmond" class="z-depth-4">
-					</div>
-					<div class="col s12 m6 l6 desc">
-						<h5>Desmond Eagle</h5>
-						<h6>GRAPHIC DESIGNER</h6>
-						<p>Pok pok direct trade godard street art, poutine fam typewriter food truck narwhal kombucha wolf cardigan butcher whatever pickled you.</p>
-						<div class="social">
-							<i class="fa fa-facebook blue-text text-darken-4" aria-hidden="true"></i>
-							<i class="fa fa-google-plus red-text text-darken-4" aria-hidden="true"></i>
-							<i class="fa fa-twitter blue-text" aria-hidden="true"></i>
-							<i class="fa fa-linkedin blue-text text-darken-3" aria-hidden="true"></i>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col s12 m6 l6">
-				<div class="row">
-					<div class="col s12 m6 l6 perfil">
-						<img src="img/img_team_4.jpg" alt="Desmond" class="z-depth-4">
-					</div>
-					<div class="col s12 m6 l6 desc">
-						<h5>Ruby Von Rails</h5>
-						<h6>LEAD DEVELOPER</h6>
-						<p>Small batch vexillologist 90's blue bottle stumptown bespoke. Pok pok tilde fixie chartreuse, VHS gluten-free selfies wolf hot.</p>
-						<div class="social">
-							<i class="fa fa-facebook blue-text text-darken-4" aria-hidden="true"></i>
-							<i class="fa fa-google-plus red-text text-darken-4" aria-hidden="true"></i>
-							<i class="fa fa-twitter blue-text" aria-hidden="true"></i>
-							<i class="fa fa-linkedin blue-text text-darken-3" aria-hidden="true"></i>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		
 	</div>
-	<div class="plans">
-		<div class="row">
-			<div class="col s12 m5 l5 titulo">
-				<h2>Choose a plan for your next project</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
-			<div class="col s12 m3 l3">
-				<div class="tarjeta z-depth-4">
-					<p>TREASURE CHEST LITE</p>
-					<span><sup><small>$</small></sup><span class="dolar"><b>89</b></span><sub><small>/year</small></sub></span>
-					<p>Access to Hestia Pro</p><hr>
-					<p>Access to All 20+ <b>Themes</b></p><hr>
-					<p>WordPress Video Tutorials</p><hr>
-					<p><b>3</b> Domains License</p><hr>
-					<p>1 Year Free Shared Hosting</p><hr>
-					<p><b>12</b> Months Support & Updates</p>
-					<a class="waves-effect waves-light btn">BUY NOW</a>
-				</div>
-			</div>
-			<div class="col s12 m4 l4">
-				<div class="tarjeta2">
-					<p>PIRATE CLUB</p>
-					<span><sup><small>$</small></sup><span class="dolar"><b>249</b></span></span>
-					<p>Access to Hestia Pro</p><hr>
-					<p>Access to All 20+ <b>Themes</b></p><hr>
-					<p>WordPress Video Tutorials</p><hr>
-					<p><b>10</b> Domains License</p><hr>
-					<p>1 Year Free Shared Hosting</p><hr>
-					<p><b>Lifetime</b> Months Support & Updates</p>
-					<a class="waves-effect waves-light btn">BUY NOW</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="clients">
-		<div class="row titulo">
-			<h1>Our Clients Love Us</h1>
-			<p class="parraf">You need more information? Check what other persons are saying about our product. They are very happy with their purchase.</p>
-		</div>
-		<div class="row">
-			<div class="col s12 m4 l4">
-				<div class="cliente-foto">
-					<img src="img/img_client_1.jpg" alt="cliente" class="circle">
-				</div>
-				<h5>Inverness McKenzie</h5>
-				<h6>BUSINESS OWNER</h6>
-				<p>"We have no regrets! After using your product my business skyrocketed! I made back the purchase price in just 48 hours! I couldn't have asked for more than this."</p>
-			</div>
-			<div class="col s12 m4 l4">
-				<div class="cliente-foto">
-					<img src="img/img_client_2.jpg" alt="cliente" class="circle">
-				</div>
-				<h5>Inverness McKenzie</h5>
-				<h6>BUSINESS OWNER</h6>
-				<p>"We have no regrets! After using your product my business skyrocketed! I made back the purchase price in just 48 hours! I couldn't have asked for more than this."</p>
-			</div>
-			<div class="col s12 m4 l4">
-				<div class="cliente-foto">
-					<img src="img/img_client_3.jpg" alt="cliente" class="circle">
-				</div>
-				<h5>Inverness McKenzie</h5>
-				<h6>BUSINESS OWNER</h6>
-				<p>"We have no regrets! After using your product my business skyrocketed! I made back the purchase price in just 48 hours! I couldn't have asked for more than this."</p>
-			</div>
-		</div>
-	</div>
-	<div class="subscribe">
-		<div class="row">
-			<div class="col s12 m6 l6 push-m3 push-l3">
-				<h4>Subscribe to our Newsletter</h4>
-				<p>Receive updates instantly</p>
-				<div class="sub">
-					<input type="text" placeholder="Your email here">
-					<a class="waves-effect waves-light btn">Subscribe</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="blog">
-		<div class="row titulo">
-			<h1>Blog</h1>
-			<p class="parraf">Check out our latest news</p>
-		</div>
-		<div class="row">
-			<div class="col s12 m4 l4 apariencia">
-				<img src="img/img_block_1.jpg" alt="blog" class="z-depth-4">
-				<h6>APPEARANCE</h6>
-				<h5>Perfectly on furniture</h5>
-				<p>Feet evil to hold long he open knew an no. Apartments occasional boisterous as solicitude to introduced. Or fifteen covered we enjoyed demesne is in prepare. In stimulated my everything it literature. Greatly explain attempt <a href="#">Read more…</a></p>
-			</div>
-			<div class="col s12 m4 l4 apariencia">
-				<img src="img/img_block_2.jpg" alt="blog" class="z-depth-4">
-				<h6>APPEARANCE</h6>
-				<h5>Fat son how smiling natural</h5>
-				<p>Feet evil to hold long he open knew an no. Apartments occasional boisterous as solicitude to introduced. Or fifteen covered we enjoyed demesne is in prepare. In stimulated my everything it literature. Greatly explain attempt <a href="#">Read more…</a></p>
-			</div>
-			<div class="col s12 m4 l4 apariencia">
-				<img src="img/img_block_3.jpg" alt="blog" class="z-depth-4">
-				<h6>APPEARANCE</h6>
-				<h5>Admiration prosperous now</h5>
-				<p>Feet evil to hold long he open knew an no. Apartments occasional boisterous as solicitude to introduced. Or fifteen covered we enjoyed demesne is in prepare. In stimulated my everything it literature. Greatly explain attempt <a href="#">Read more…</a></p>
-			</div>
-		</div>
-	</div>
-	<div class="getInTouch">
-		<div class="row">
-			<div class="col s12 m6 l6 titulo">
-				<h2>Get in Touch</h2>
-				<p>You need more information? Check what other persons are saying about our product. They are very happy with their purchase.</p>
-				<h5><i class="material-icons">place</i>Find us at the office</h5>
-				<p>Bld Mihail Kogalniceanu, nr. 8, <br>7652 Bucharest,<br>Romania</p>
-				<h5><i class="material-icons">smartphone</i>Give us a ring</h5>
-				<p>Michael Jordan <br>+40 762 321 762 <br>Mon - Fri, 8:00-22:00</p>
-			</div>
-			<div class="col s12 m6 l6">
-				<div class="contact">
-					<h5 class="z-depth-4">Contact Us</h5>
-					<div class="name">
-						<input type="text" placeholder="Name">
-						<input type="text" placeholder="Email">
-					</div>
-					<input type="text" placeholder="Subject" class="subj">
-					<textarea name="YourMessage" id="" cols="30" rows="10" class="subj"></textarea>
-					<a class="waves-effect waves-light btn pull-right">Send Message</a>
-				</div>
-			</div>
-		</div>
-	</div>
+
 	<footer>
-		<div class="row footer-row">
-			<div class="col s12 m4 l4 text">
-				<h5>About us</h5>
-				<p>Inhabit hearing perhaps on ye do no. It maids decay as there he. Smallest on suitable disposed although do blessing he juvenile in. Society excited forbade. Here name off yet she long sold easy. Differed oh cheerful procured pleasure securing suitable. Hold rich on an he oh fine. Chapter ability shyness article welcome be do on service.</p>
-			</div>
-			<div class="col s12 m4 l4 text">
-				<h5>Social Media Feed</h5>
-				<div class="twit">
-					<p><i class="fa fa-twitter" aria-hidden="true"></i></p>
-					<p class="parraf">What's New in Hestia - Our Flagship Product HTTPS://T.CO/LSLFRTYPZX</p>
-				</div>
-				<div class="twit">
-					<p><i class="fa fa-facebook" aria-hidden="true"></i></p>
-					<p class="parraf">Our Hestia Facebook Group has reached 169 members & counting HTTPS://WWW.FACEBOOK.COM/GROUPS/2024469201114053</p>
-				</div>
-				<div class="twit">
-					<p><i class="fa fa-twitter" aria-hidden="true"></i></p>
-					<p class="parraf">Great example of our #WORDPRESS theme Hestia HTTPS://WWW.JELLESCHUURMAN.NL</p>
-				</div>
-			</div>
-			<div class="col s12 m4 l4 text">
-				<h5>Instagram Feed</h5>
-				<div class="row">
-					<div class="col s3 m3 l3">
-						<img src="img/img_instagram_1.jpg" alt="instagram">
-					</div>
-					<div class="col s3 m3 l3">
-						<img src="img/img_instagram_2.jpg" alt="instagram">
-					</div>
-					<div class="col s3 m3 l3">
-						<img src="img/img_instagram_3.jpg" alt="instagram">
-					</div>
-					<div class="col s3 m3 l3">
-						<img src="img/img_instagram_4.jpg" alt="instagram">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col s3 m3 l3">
-						<img src="img/img_instagram_5.jpg" alt="instagram">
-					</div>
-					<div class="col s3 m3 l3">
-						<img src="img/img_instagram_6.jpg" alt="instagram">
-					</div>
-					<div class="col s3 m3 l3">
-						<img src="img/img_instagram_7.jpg" alt="instagram">
-					</div>
-					<div class="col s3 m3 l3">
-						<img src="img/img_instagram_8.jpg" alt="instagram">
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="row">
 			<div class="col s12 m12 l12 fin">
-				<div class="links">
-					<p><a href="#">BLOG  </a><a href="#">PRESENTATION  </a><a href="#">DISCOVER  </a><a href="#">PAYMENT  </a><a href="#">CONTACT </a></p>
-				</div>
-				<p>Hestia | Powered by WordPress</p>
+				
+				<p>Made With Love <i class="fa fa-heart" aria-hidden="true"></i></p>
 			</div>
 		</div>
 	</footer>
 </div>
-<div class="fixed-action-btn horizontal">
+<!--<div class="fixed-action-btn horizontal">
 	<a class="btn-floating btn-large blue accent-2">
 	  <i class="large material-icons">gps_fixed</i>
 	</a>
 	<ul>
 	  <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
 	  <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-	  <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+	  <li><a class="btn-floating green"><i class="material-icons">publish</i><p>Jola</p></a></li>
 	  <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
 	</ul>
-</div>
+</div>-->
 	<script src="https://code.jquery.com/jquery-1.12.4.js"
   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
   crossorigin="anonymous"></script>
