@@ -23,6 +23,11 @@ $(document).ready(function(){
     $('.skills-small').addClass('fadeInUp');
   }, { offset: '80%'});
 
+  $('.portf').css('opacity', 0);
+  $('.portf').waypoint(function() {
+    $('.portf').addClass('fadeIn');
+  }, { offset: '80%'});
+
   //hover portfolio
   $( ".hove" )
   .mouseenter(function() {
