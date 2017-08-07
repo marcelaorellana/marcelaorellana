@@ -13,8 +13,6 @@ $(document).ready(function(){
     $('.aboutme-p').addClass('fadeInRight');
   }, { offset: '90%'});
 
-
-
   $('.skills-big').css('opacity', 0);
   $('.skills-big').waypoint(function() {
     $('.skills-big').addClass('rotateIn');

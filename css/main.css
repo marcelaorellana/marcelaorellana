@@ -6822,7 +6822,7 @@ nav {
     color: white; }
 
 .typewrite {
-  color: #314656; }
+  color: white; }
 
 .contenedor {
   margin: -50px 30px 15px 30px;
@@ -6879,8 +6879,8 @@ nav {
     @media screen and (max-width: 600px) {
       .contenedor .aboutme {
         padding: 20px;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); } }
+        -webkit-clip-path: polygon(0 0, 100% 4%, 100% 96%, 0% 100%);
+        clip-path: polygon(0 0, 100% 4%, 100% 96%, 0% 100%); } }
   .contenedor .skills {
     z-index: -22;
     background-color: #F0F0F0;
@@ -6897,6 +6897,7 @@ nav {
       width: 240px;
       height: 240px;
       margin: auto;
+      margin-bottom: 20px;
       display: flex;
       justify-content: center;
       align-items: center; }
@@ -6920,6 +6921,7 @@ nav {
       width: 150px;
       height: 150px;
       margin: auto;
+      margin-bottom: 20px;
       display: flex;
       justify-content: center;
       align-items: center; }
@@ -6951,7 +6953,9 @@ nav {
       width: 100%;
       height: 35vh;
       border-radius: 10px;
-      background-size: cover; }
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 20px; }
     .contenedor .portafolio .hove {
       border-radius: 10px;
       width: 100%;
@@ -6970,6 +6974,11 @@ nav {
       background-color: rgba(225, 225, 225, 0.6); }
     .contenedor .portafolio .btn, .contenedor .portafolio .btn-large {
       background-color: #EA877E; }
+    @media screen and (max-width: 600px) {
+      .contenedor .portafolio {
+        margin-top: -90px;
+        -webkit-clip-path: polygon(50% 0%, 100% 3%, 100% 97%, 50% 100%, 0 97%, 0 3%);
+        clip-path: polygon(50% 0%, 100% 3%, 100% 97%, 50% 100%, 0 97%, 0 3%); } }
   .contenedor .contact {
     background-color: #49979A;
     padding-top: 60px;
@@ -6982,6 +6991,10 @@ nav {
         font-size: 25px; }
     .contenedor .contact a:hover p {
       color: #EA877E; }
+    @media screen and (max-width: 600px) {
+      .contenedor .contact {
+        height: 60vh;
+        padding: 20px; } }
   .contenedor footer {
     background-color: #323437;
     color: white;
