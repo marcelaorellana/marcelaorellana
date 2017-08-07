@@ -145,8 +145,15 @@ nav{
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			@media screen and (max-width: 1000px){
+				width: 200px;
+				height: 200px;
+			}
 			i{
 				font-size: 130px;
+				@media screen and (max-width: 1000px){
+					font-size: 100px;
+				}
 				
 			}
 		}
@@ -196,6 +203,9 @@ nav{
 		padding-bottom: 80px;
 		background-color: $azul;
 		text-align: center;
+		.titulo-port{
+			color: $azul;
+		}
 		.pokedex{
 			background-image: url(../img/pokedex.png);
 		}
@@ -239,7 +249,7 @@ nav{
 		}
 		.hove:hover{
 			opacity: 1;
-			background-color: rgba(225, 225, 225, 0.6);
+			background-color: rgba(225, 225, 225, 0.7);
 		}
 		.btn{
 			background-color: $rosado;
@@ -267,7 +277,7 @@ nav{
 
 		}
 		@media screen and (max-width: 600px){
-			height: 60vh;
+			height: 70vh;
 			padding: 20px;
 		}
 	}
