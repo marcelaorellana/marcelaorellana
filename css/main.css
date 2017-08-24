@@ -6842,15 +6842,14 @@ nav {
       width: 100%;
       margin: auto; }
       .contenedor .flecha div i {
-        color: #49979A;
+        color: #EA877E;
         font-size: 70px; }
   .contenedor .aboutme {
     background-color: #EA877E;
     padding: 30px 150px 90px;
     -webkit-clip-path: polygon(0 0, 100% 8%, 100% 92%, 0% 100%);
     clip-path: polygon(0 0, 100% 8%, 100% 92%, 0% 100%);
-    color: white;
-    text-align: center; }
+    color: white; }
     .contenedor .aboutme .marcela-img {
       border: 8px solid white;
       -ms-transform: rotate(-7deg);
@@ -6872,7 +6871,9 @@ nav {
     .contenedor .aboutme i.headlike {
       color: #4CAF50; }
     .contenedor .aboutme p {
-      color: white; }
+      color: white;
+      text-align: left;
+      margin-left: 10px; }
     .contenedor .aboutme h6 {
       font-family: "PT Serif", serif;
       font-weight: bold; }
