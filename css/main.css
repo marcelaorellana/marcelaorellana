@@ -6945,7 +6945,7 @@ nav {
         color: #ACC1C2; }
         @media screen and (max-width: 400px) {
           .contenedor .skills .skills-small i {
-            font-size: 60px; } }
+            font-size: 40px; } }
   .contenedor .portafolio {
     -webkit-clip-path: polygon(35% 0, 100% 5%, 100% 93%, 65% 100%, 0 95%, 0 7%);
     clip-path: polygon(35% 0, 100% 5%, 100% 93%, 65% 100%, 0 95%, 0 7%);
