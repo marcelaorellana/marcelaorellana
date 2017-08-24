@@ -6907,13 +6907,13 @@ nav {
       align-items: center; }
       @media screen and (max-width: 1000px) {
         .contenedor .skills .skills-big {
-          width: 200px;
-          height: 200px; } }
+          width: 180px;
+          height: 180px; } }
       .contenedor .skills .skills-big i {
         font-size: 130px; }
         @media screen and (max-width: 1000px) {
           .contenedor .skills .skills-big i {
-            font-size: 100px; } }
+            font-size: 90px; } }
     .contenedor .skills .javascript {
       border-color: #314656; }
       .contenedor .skills .javascript i {
@@ -6947,6 +6947,9 @@ nav {
       .contenedor .skills .skills-small i {
         font-size: 70px;
         color: #ACC1C2; }
+        @media screen and (max-width: 400px) {
+          .contenedor .skills .skills-small i {
+            font-size: 60px; } }
   .contenedor .portafolio {
     -webkit-clip-path: polygon(35% 0, 100% 5%, 100% 93%, 65% 100%, 0 95%, 0 7%);
     clip-path: polygon(35% 0, 100% 5%, 100% 93%, 65% 100%, 0 95%, 0 7%);
