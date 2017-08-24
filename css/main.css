@@ -6940,6 +6940,10 @@ nav {
         .contenedor .skills .skills-small {
           width: 100px;
           height: 100px; } }
+      @media screen and (max-width: 400px) {
+        .contenedor .skills .skills-small {
+          width: 90px;
+          height: 90px; } }
       .contenedor .skills .skills-small i {
         font-size: 70px;
         color: #ACC1C2; }
