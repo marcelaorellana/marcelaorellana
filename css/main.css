@@ -6892,6 +6892,9 @@ nav {
       color: #314656; }
     .contenedor .skills .skills-small-row {
       margin-bottom: 50px; }
+      @media screen and (max-width: 1000px) {
+        .contenedor .skills .skills-small-row {
+          margin: 0; } }
     .contenedor .skills .skills-big {
       border: 10px solid #49979A;
       border-radius: 50%;
@@ -6933,6 +6936,10 @@ nav {
       display: flex;
       justify-content: center;
       align-items: center; }
+      @media screen and (max-width: 800px) {
+        .contenedor .skills .skills-small {
+          width: 120px;
+          height: 120px; } }
       .contenedor .skills .skills-small i {
         font-size: 70px;
         color: #ACC1C2; }
