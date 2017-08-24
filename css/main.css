@@ -6936,10 +6936,10 @@ nav {
       display: flex;
       justify-content: center;
       align-items: center; }
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 600px) {
         .contenedor .skills .skills-small {
-          width: 120px;
-          height: 120px; } }
+          width: 100px;
+          height: 100px; } }
       .contenedor .skills .skills-small i {
         font-size: 70px;
         color: #ACC1C2; }

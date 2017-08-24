@@ -179,7 +179,7 @@ nav{
 			i{
 				color: $rosado;
 			}
-		}
+		} 
 		.skills-small{
 			border: 6px solid #ACC1C2;
 			border-radius: 50%;
@@ -190,9 +190,9 @@ nav{
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			@media screen and (max-width: 800px){
-				width: 120px;
-				height: 120px; 
+			@media screen and (max-width: 600px){
+				width: 100px;
+				height: 100px; 
 
 
 			}
